@@ -1,0 +1,25 @@
+{
+  "name": "@Eol1881/sheets-exporter",
+  "version": "0.1.0",
+  "description": "Google Sheets exporter utility",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "Eol1881",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.4",
+    "googleapis": "^171.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
