@@ -18,7 +18,7 @@
 ### 2. Подготовить таблицу
 
 1. Создать Google Spreadsheet
-2. Создать два листа (tabs): `BadAppointments` и `Reviews`
+2. Создать два листа (tabs), например: `BadAppointments` и `Reviews`
 3. Расшарить таблицу на email сервисного аккаунта (поле `client_email` в JSON-ключе) с правами **Editor**
 4. Скопировать ID таблицы из URL: `https://docs.google.com/spreadsheets/d/{SPREADSHEET_ID}/edit`
 
@@ -41,18 +41,10 @@ GOOGLE_SERVICE_ACCOUNT_PATH=./credentials.json
 npm install
 ```
 
-## Скрипты
-
-```bash
-npm run dev        # Запуск тестового скрипта (экспорт каждые 60 сек)
-npm run build      # Компиляция TypeScript в dist/
-npm run typecheck  # Проверка типов
-```
-
 ## Использование как библиотеки
 
 ```typescript
-import { SheetsExporter } from "sheets-export";
+import { SheetsExporter } from "@Eol1881/sheets-exporter";
 
 // Конфигурация из .env
 const exporter = new SheetsExporter();
