@@ -38,7 +38,7 @@ GOOGLE_SERVICE_ACCOUNT_PATH=./credentials.json
 ## Установка
 
 ```bash
-npm install
+npm install github:@Eol1881/sheets-exporter
 ```
 
 ## Использование как библиотеки
